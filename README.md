@@ -3,9 +3,9 @@ Contains instructions to run Docker and LXC and test them with benchmarking tool
 ________________________________________________________________________________________
 
 Contributors:
-Ruturaj Kadikar, Senior Research Associate, Dept. of CSE, SRM IST
-Arunava Roy, Research Assistant Professor, Dept. of CSE, SRM IST
-Hoang Pham, Professor, Dept. of Industrial and Systems Engineering, Rutgers University
+  Ruturaj Kadikar, Senior Research Associate, Dept. of CSE, SRM IST
+  Arunava Roy, Research Assistant Professor, Dept. of CSE, SRM IST
+  Hoang Pham, Professor, Dept. of Industrial and Systems Engineering, Rutgers University
 ________________________________________________________________________________________
 
 This repository contains steps to run benchmarking tools namely, LINPACK, STREAM and GUPS
