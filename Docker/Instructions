@@ -1,11 +1,18 @@
-%% To test LINPACK %%
-java Linpack
+%%%%% To build Docker image from the Dockerfile, run the following command %%%%%
+  sudo docker build -t <name> .
 
-%% To test GUPS %%
-cd gups/
-mpirun -np 2 ./gups_vanilla 8 100 100
+%%%%% To run the Docker container from the Docker image, run the following command %%%% 
+  sudo docker run -it <name> /bin/bash
 
-%% To test STREAM %%
-cd STREAM/
-gcc -O stream.c -o stream
-./stream
+%%%%% To Test the benchamrks type the following commands in the running Docker container %%%%%
+1. %% To test LINPACK %%
+  java Linpack
+
+2. %% To test GUPS %%
+  cd gups/
+  mpirun -np 2 ./gups_vanilla 8 100 100
+
+3. %% To test STREAM %%
+  cd STREAM/
+  gcc -O stream.c -o stream
+  ./stream
