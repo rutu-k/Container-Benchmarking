@@ -4,7 +4,9 @@ ________________________________________________________________________________
 
 Contributors:
   Ruturaj Kadikar, Senior Research Associate, Dept. of CSE, SRM IST
+  
   Arunava Roy, Research Assistant Professor, Dept. of CSE, SRM IST
+  
   Hoang Pham, Professor, Dept. of Industrial and Systems Engineering, Rutgers University
 ________________________________________________________________________________________
 
