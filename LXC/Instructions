@@ -1,1 +1,32 @@
+%%%%% To create LXC container %%%%5
+  sudo lxc launch ubuntu:16.04 <name>
 
+%%%%% To check whether the container is created %%%%%
+  sudo lxc list
+
+%%%%% To run the created LXC container %%%%%
+  sudo lxc exec <name of container> -- /bin/bash
+
+%%%%% To create the environment install the pre-requisites %%%%%
+  apt-get install -y wget git-core unzip mpich default-jdk make
+
+%%%%% To Test the benchamrks type the following commands in the running LXC container %%%%%
+
+1. %% To test LINPACK %%
+  mkdir linpack
+  wget www.netlib.org/benchmark/linpackjava/LinpackJava.zip
+  unzip LinpackJava.zip 
+  javac -O Linpack.java
+  java Linpack
+
+2. %% To test GUPS %%
+  git clone https://github.com/alexandermerritt/gups.git
+  cd gups/
+  make -f Makefile.linux gups_vanilla
+  mpirun -np 2 ./gups_vanilla 20 1000 1024
+
+3. %% To test STREAM %%
+  git clone https://github.com/jeffhammond/STREAM.git
+  cd STREAM/
+  gcc -O stream.c -o stream
+  ./stream
