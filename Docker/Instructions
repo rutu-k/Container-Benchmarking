@@ -1,0 +1,11 @@
+%% To test LINPACK %%
+java Linpack
+
+%% To test GUPS %%
+cd gups/
+mpirun -np 2 ./gups_vanilla 8 100 100
+
+%% To test STREAM %%
+cd STREAM/
+gcc -O stream.c -o stream
+./stream
