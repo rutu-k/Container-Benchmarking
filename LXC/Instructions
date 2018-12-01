@@ -1,3 +1,5 @@
+##### Note: LXC is a system container and hence it is launched directly from required base image #####
+
 %%%%% To create LXC container %%%%5
   sudo lxc launch ubuntu:16.04 <name>
 
